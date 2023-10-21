@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.loggo_img {
+  height: 100px;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+.innercontainer {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.innerContainer form {
+  display: grid;
+  gap: 30px;
+  margin: 4rem;
+  padding: 50px;
+}
+.imageGallery {
+  grid-column: 1;
+  width: 300px;
+  background-color: aqua;
+  height: 700px;
+}
+
+.bildalbum {
+  width: 300px;
+  height: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(181, 180, 180);
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px;
+  font-weight: bold;
+}

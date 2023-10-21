@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainGrid">
+      <header>
+        <img src="ikea logga.png" alt="ikeaslogga" class="loggo_img" />
+      </header>
+
+      <main class="innercontainer">
+        <h1>Bli IKEA Family medlem</h1>
+        <p>Är du redan medlem? <a href="#">Logga in</a></p>
+        <div class="imageGallery">
+          <img src="mys.jpg" alt="" class="bildalbum" />
+          <img src="fest.jpg" alt="" class="bildalbum" />
+          <img src="blomma.jpg" alt="" class="bildalbum" />
+          <img src="kaffe.jpg" alt="" class="bildalbum" />
+          <img src="kaffetjej.jpg" alt="" class="bildalbum" />
+          <img src="kompisar.jpg" alt="" class="bildalbum" />
+          <img src="mat.jpg" alt="" class="bildalbum" />
+          <img src="oldies.jpg" alt="" class="bildalbum" />
+          <img src="pyssel.jpg" alt="" class="bildalbum" />
+        </div>
+
+        <form action="https://httpbin.org/anything" method="post">
+          <h2>
+            Vad kul att du vill skapa ett konto hos oss! Välj om du vill bli
+            IKEA Family medlem, helt utan kostnad. Annars skapar du ett enkelt
+            IKEA konto utan några extra förmåner.
+          </h2>
+          <br />
+
+        
+          <input type="radio" name="radio" id="buttonyes" value="yes" />
+          <label for="buttonyes">
+            Ja, jag vill bli medlem och ta del av förmåner, medlemspriser och
+            mycket mer! Mer information
+          </label>
+          <br />
+          <br />
+
+          <input type="radio" name="radio" id="buttonno" value="no" />
+          <label for="buttonno">
+            Nej, jag vill inte bli medlem, utan bara skapa ett IKEA konto utan
+            extra förmåner. Mer information
+          </label>
+          <br />
+          <br />
+
+          <label for="personnummer">Personnummer</label>
+          <input type="text" name="personnummer" id="securitynumber" />
+          <br />
+          <br />
+          <label for="Firstname">Förnamn</label>
+          <input type="text" name="förnamn" id="Firstname" />
+          <br />
+          <br />
+          <label for="lastname">Efternamn</label>
+          <input type="text" name="Efternamn" id="lastname" />
+          <br />
+          <br />
+          <label for="warehouse">Önskat varuhus</label>
+          <select name="önskat varuhus" id="warehouse">
+            <option value="Stockholm">Stockholm</option>
+            <option value="Göteborg">Göteborg</option>
+            <option value="Malmö">Malmö</option>
+          </select>
+          <br />
+          <br />
+
+          <label for="phonenumber">Telefonnummer</label>
+          <input type="tel" name="Telefonnummer" id="phonenumber" />
+          <br />
+          <br />
+
+          <label for="email">E-postadress</label>
+          <input type="text" name="E-postadress" id="e-mail" />
+          <br />
+          <br />
+
+          <label for="password1">Lösenord</label>
+          <input type="password" name="lösenord" id="password1" />
+          <br />
+          <br />
+
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="integritetspolicy"
+            required
+          />
+
+          <label for=" integritetspolicy"
+            >Jag har läst och förstått Intigritetspolicy</label
+          >
+          <br />
+          <br />
+          <input type="checkbox" name="checkbox" id="användarvilkor" required />
+          <label for="användarvilkor"
+            >Jag har läst och förstått användarvilkor</label
+          >
+          <br />
+          <br />
+          <input type="checkbox" name="checkbox" id="erbjudanden" />
+          <label for="erbjudanden"
+            >Jag vill få erbjudanden, överaskningar och heminrdeningsinspiration
+            från Ikea</label
+          >
+          <br />
+          <br />
+
+          <button type="submit" class="submit_btn">Gå vidare</button>
+        </form>
+      </main>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>
